@@ -42,5 +42,14 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Corsair Pharma is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Corsair Pharma, Inc. is a privately held clinical-stage biopharmaceutical company developing
+proprietary prodrugs of treprostinil for pulmonary arterial hypertension (PAH). Its lead program,
+the TRX-248 transdermal system, is an investigational once-daily patch.
+
+**No API surface.** Corsair Pharma is a drug developer, not a software vendor. Its public web
+presence is a five-page marketing and investor-news site (home, news, team, privacy policy, terms
+of use) with no developer program, API, SDK, or machine-readable specification. This profile is
+recorded as `x-coverage: none / not-a-software-company` — an honest zero, not a gap in our research.
+
+- Website: https://www.corsairpharma.com/
+- News: https://www.corsairpharma.com/news

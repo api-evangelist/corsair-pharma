@@ -1,0 +1,124 @@
+generated: '2026-08-11'
+method: probed
+source: https://www.corsairpharma.com/
+host: https://www.corsairpharma.com
+
+# NOTE: no pointer is wired into apis.yml for this file. Nothing here returned a real
+# document, so emitting a `WellKnown` or `SecurityTxt` pointer would assert that Corsair
+# Pharma serves a discovery surface it does not serve.
+#
+# The live host sits behind a SiteGround "Robot Challenge Screen" that answers EVERY
+# path -- including /robots.txt and a deliberately nonsensical control path -- with
+# HTTP 202 and a 169-198 byte HTML meta-refresh to /.well-known/sgcaptcha/. A 202 here
+# is therefore NOT evidence that a path exists; it is the challenge, not the document.
+# Absence was instead confirmed against Wayback Machine captures, which recorded honest
+# 404s on the same paths in 2024 before the challenge was enabled.
+
+challenge:
+  present: true
+  vendor: SiteGround
+  type: bot-challenge
+  title: Robot Challenge Screen
+  status: 202
+  redirects_to: /.well-known/sgcaptcha/
+  catch_all: true
+  control_path: /zzz-api-evangelist-control-8614
+  control_status: 202
+  note: >-
+    Control path returned the identical 202 challenge, proving the response is a
+    catch-all and carries no information about whether a path exists. Challenge was
+    not solved or evaded.
+
+documents:
+- path: /.well-known/security.txt
+  status: 202
+  document: false
+  note: bot challenge, not a document; archived capture 2024-04-05 returned 404
+- path: /.well-known/openid-configuration
+  status: 202
+  document: false
+  note: bot challenge, not a document; archived capture 2024-04-03 returned 404
+- path: /.well-known/oauth-authorization-server
+  status: 202
+  document: false
+  note: bot challenge, not a document
+- path: /.well-known/api-catalog
+  status: 202
+  document: false
+  note: bot challenge, not a document
+- path: /.well-known/ai-plugin.json
+  status: 202
+  document: false
+  note: bot challenge, not a document; archived capture 2024-04-02 returned 404
+- path: /.well-known/agent-card.json
+  status: 202
+  document: false
+  note: bot challenge, not a document; no A2A agent card recorded (see a2a note below)
+- path: /.well-known/agent.json
+  status: 202
+  document: false
+  note: bot challenge, not a document
+
+archived_confirmation:
+  source: http://web.archive.org/cdx/search/cdx?url=corsairpharma.com*
+  note: >-
+    Wayback CDX index for the whole host lists exactly six live URLs -- /, /news,
+    /team, /privacy-policy, /terms-of-use, /blog-feed.xml (plus sitemaps and Wix
+    platform assets). Every /.well-known/* path it ever captured returned 404.
+  well_known_404s:
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    captured: '2024-04-02'
+  - path: /.well-known/openid-configuration
+    status: 404
+    captured: '2024-04-03'
+  - path: /.well-known/security.txt
+    status: 404
+    captured: '2024-04-05'
+  - path: /.well-known/dnt-policy.txt
+    status: 404
+    captured: '2024-04-02'
+  - path: /.well-known/trust.txt
+    status: 404
+    captured: '2024-04-02'
+
+contract_discovery:
+  note: >-
+    STEP 0b run against both hosts (corsairpharma.com, www.corsairpharma.com). No API
+    host exists to probe -- apis.yml carries no apis[] entry and therefore no baseURL
+    or servers[] host. All spec paths returned the same catch-all 202 challenge.
+  paths_probed:
+  - /openapi.json
+  - /openapi.yaml
+  - /swagger.json
+  - /v1/openapi.json
+  - /api-docs
+  - /docs
+  - /redoc
+  - /graphql
+  - /llms.txt
+  - /sitemap.xml
+  result: >-
+    No OpenAPI, Swagger, GraphQL, AsyncAPI, MCP or A2A surface found. Corsair Pharma is
+    a clinical-stage pharmaceutical developer; the site is a Wix marketing brochure.
+  github_org:
+    probed:
+    - url: https://api.github.com/orgs/corsairpharma
+      status: 404
+    - url: https://api.github.com/orgs/corsair-pharma
+      status: 404
+    - url: https://api.github.com/orgs/CorsairPharma
+      status: 404
+  package_registries:
+    probed:
+    - url: https://pypi.org/pypi/corsair-pharma/json
+      status: 404
+    - url: https://pypi.org/pypi/corsairpharma/json
+      status: 404
+    - registry: npm
+      query: corsair-pharma
+      first_party_matches: 0
+      note: >-
+        npm search returned only unrelated packages (Corsair the integration platform,
+        @corsair-dev/cli, @yext/components-corsair). No first-party Corsair Pharma
+        package on any registry.
