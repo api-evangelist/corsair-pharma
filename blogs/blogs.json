@@ -1,0 +1,21 @@
+{
+  "repo": "corsair-pharma",
+  "feeds": [
+    {
+      "source": "https://www.corsairpharma.com/",
+      "feed_url": "https://www.corsairpharma.com/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.corsairpharma.com/news",
+      "feed_url": "https://www.corsairpharma.com/news",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-15T12:22:01Z"
+}
