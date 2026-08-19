@@ -18,7 +18,7 @@ x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-11'
 modified: '2026-08-11'
 image: https://static.wixstatic.com/media/eb8f76_be22d65dbdb84f7dbd3bae3f30cf754e~mv2.png
