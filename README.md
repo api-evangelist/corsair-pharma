@@ -64,14 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Corsair Pharma, Inc. is a privately held clinical-stage biopharmaceutical company developing
-proprietary prodrugs of treprostinil for pulmonary arterial hypertension (PAH). Its lead program,
-the TRX-248 transdermal system, is an investigational once-daily patch.
+Corsair Pharma, Inc. is a privately held clinical-stage biopharmaceutical company developing proprietary prodrugs of treprostinil for the treatment of pulmonary arterial hypertension (PAH). Its lead program, the TRX-248 transdermal system, is an investigational once-daily patch that delivers an inactive treprostinil prodrug across the skin for conversion to active drug in the liver, aiming to combine the efficacy and titration profile of parenteral prostacyclin therapy with non-invasive once-daily dosing. The company completed its preclinical program, announced positive Phase 1 results for TRX-248 in June 2026, closed a $23M Series B led by New Rhein Healthcare Investors, and has entered a strategic collaboration with United Therapeutics to advance novel treprostinil prodrugs. Corsair Pharma is a drug developer, not a software vendor: its public web presence is a five-page marketing and investor-news site with no developer program, API, SDK, or machine-readable specification of any kind.
 
-**No API surface.** Corsair Pharma is a drug developer, not a software vendor. Its public web
-presence is a five-page marketing and investor-news site (home, news, team, privacy policy, terms
-of use) with no developer program, API, SDK, or machine-readable specification. This profile is
-recorded as `x-coverage: none / not-a-software-company` — an honest zero, not a gap in our research.
+**Areas:** Company · Pharmaceuticals · Biotechnology · Life Sciences · Drug Development · Clinical Trials · Pulmonary Arterial Hypertension · Transdermal Delivery
 
-- Website: https://www.corsairpharma.com/
-- News: https://www.corsairpharma.com/news
+## Corsair Pharma on APIs.io
+
+Everything profiled for Corsair Pharma is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/corsair-pharma/](https://apis.io/providers/corsair-pharma/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Corsair Pharma Domain Security](https://apis.io/security/corsair-pharma/corsair-pharma-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.corsairpharma.com/)
+- [Blog](https://www.corsairpharma.com/news)
+- [Terms of service](https://www.corsairpharma.com/terms-of-use)
+- [Privacy policy](https://www.corsairpharma.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 3.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/corsair-pharma/](https://apis.io/providers/corsair-pharma/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Corsair Pharma: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/corsair-pharma/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
